@@ -1,8 +1,7 @@
+/*NEOITO PROJECT*/
+
 :root{
 	--size:270px;
-}
-body{
-  /*background-image: url("image/wall.jpg");*/
 }
 #body
 {
@@ -17,8 +16,6 @@ body{
 	border:10px solid #464545;
 	border-radius: 50%;
 	position: relative;
-      /*background: #fff;*/
-
 }
 #sec-hand{
 	width: 1px;
@@ -61,15 +58,15 @@ body{
     z-index: -1;
   }
   h3 {
-   letter-spacing: 1px;
-  font-variant: small-caps;
-  position: absolute;
-  left: 50%;
-  top: 15%;
-  transform: translateX(-50%);
-  font-family: sans-serif;
-  color: black;
-  font-weight:100;
+    letter-spacing: 1px;
+    font-variant: small-caps;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+    font-family: sans-serif;
+    color: black;
+    font-weight:100;
 }
   #time {
   font-size: 21px;
@@ -238,7 +235,6 @@ body{
     border-radius: 50%;
     border: 6px solid #000;
     right: 26px;
-    /*background: white;*/
 }
 
 .pendulumring2 ,.pendulumring3 {

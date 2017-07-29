@@ -1,3 +1,5 @@
+// NEOITO PROJECTS 
+
 function updateTime(date){
     var timeDiv = document.getElementById("time");
     var time = date.getHours()+":"+date.getMinutes();
