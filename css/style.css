@@ -86,7 +86,7 @@ h3 {
   z-index: -1;
   font-family: monospace;
 }
-.num{
+.num {
 	height: 100%;
 	position: absolute;
 	left: calc(50% - 0.5em);
@@ -172,63 +172,34 @@ h3 {
 .num12 div{
 	transform: rotate(-360deg);
 }
+.pendulum1, .pendulum2, .pendulum3, .pendulum4, .pendulum5 {
+  background-color: black;
+  transform-origin: 50% 80%;
+  position: absolute;
+}
+.pendulum2 , .pendulum3, .pendulum4, .pendulum5 {
+  width: 6px;
+}
 .pendulum1 {
 	width: 10px;
   height: 28%;
-  background-color: black;
-  transform-origin: 50% 80%;
-  position: absolute;
   left: 49.7%;
 }
 .pendulum2 {
-	width: 6px;
   height: 23%;
-  background-color: black;
-  transform-origin: 50% 80%;
-  position: absolute;
   left: 52%;
 }
 .pendulum3 {
-	width: 6px;
   height: 23%;
-  background-color: black;
-  transform-origin: 50% 80%;
-  position: absolute;
   left: 47.7%;
 }
 .pendulum4 {
-	width: 6px;
   height: 18%;
-  background-color: black;
-  transform-origin: 50% 80%;
-  position: absolute;
   left: 45.5%;
 }
 .pendulum5 {
-	width: 6px;
   height: 18%;
-  background-color: black;
-  transform-origin: 50% 80%;
-  position: absolute;
   left: 54%;
-}
-.pendulum6 {
-	width: 6px;
-  height: 19%;
-  background-color: black;
-  transform-origin: 50% 80%;
-  position: absolute;
-  left: 43.5%;
-  margin-top: -16px
-}
-.pendulum7 {
-	width: 6px;
-  height: 19%;
-  background-color: black;
-  transform-origin: 50% 80%;
-  position: absolute;
-  left: 56%;
-  margin-top: -12px;
 }
 .pendulamLogo {
   position: relative;
@@ -239,7 +210,7 @@ h3 {
   border: 6px solid #000;
   right: 26px;
 }
-.pendulumring2 ,.pendulumring3 {
+.pendulumring2 ,.pendulumring3 ,.pendulumring4 , .pendulumring5{
   position: relative;
   bottom: -8.4em;
   width: 25px;
@@ -248,21 +219,10 @@ h3 {
   right: 10px;
   background-color: #ff623b;
 }
-.pendulumring4 {
-  position: relative;
+.pendulumring4 , .pendulumring5 {
   bottom: -7.4em;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
   right: 12px;
-  background-color: #ff623b;
 }
 .pendulumring5{
-  position: relative;
-  bottom: -7.4em;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
   right: 9px;
-  background-color: #ff623b;
 }
