@@ -1,0 +1,267 @@
+/*NEOITO PROJECT*/
+
+:root{
+	--size:270px;
+}
+#body
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5em;
+}
+#clock
+{
+	width:var(--size);
+	height:var(--size);
+	border:10px solid #464545;
+	border-radius: 50%;
+	position: relative;
+}
+#sec-hand{
+	width: 1px;
+	height: 50%;
+	background-color: blue;
+	transform-origin: 50% 80%;
+	position: absolute;
+	top:10%;
+	left: 50%;
+}
+#min-hand{
+	width: 	3px;
+	height: 40%;
+	background-color: black;
+	transform-origin: 50% 80%;
+	position: absolute;
+	top:18%;
+	left: 50%;
+	
+
+}
+#hr-hand{
+	width: 5px;
+	height: 25%;
+	background-color: #000;
+	transform-origin: 50% 80%;
+	position: absolute;
+	top:30%;
+	left: 50%;
+	margin-left: -2px;
+}
+.circle {
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    position: absolute;
+    top:29%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  h3 {
+    letter-spacing: 1px;
+    font-variant: small-caps;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+    font-family: sans-serif;
+    color: black;
+    font-weight:100;
+}
+  #time {
+  font-size: 21px;
+  width: 32px;
+  height: 9px;
+  border-radius: 2px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  bottom: 27%;
+  transform: translateX(-100%);
+  z-index: -1;
+  font-family: monospace;
+}
+.num{
+	 height: 100%;
+	 position: absolute;
+	 left: calc(50% - 0.5em);
+}
+.num div{
+	width: 1em;
+    line-height: 3em;
+    color: crimson;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 900;
+    font-family: cursive;
+}
+.num1{
+	transform: rotate(30deg);
+}
+.num1 div{
+	transform: rotate(-30deg);
+}
+.num2{
+	transform: rotate(60deg);
+}
+.num2 div{
+	transform: rotate(-60deg);
+}
+.num3{
+	transform: rotate(90deg);
+}
+.num3 div{
+	transform: rotate(-90deg);
+}
+.num4{
+	transform: rotate(120deg);
+}
+.num4 div{
+	transform: rotate(-120deg);
+}
+.num5{
+	transform: rotate(150deg);
+}
+.num5 div{
+	transform: rotate(-150deg);
+}
+.num6{
+	transform: rotate(180deg);
+}
+.num6 div{
+	transform: rotate(-180deg);
+}
+.num7{
+	transform: rotate(210deg);
+}
+.num7 div{
+	transform: rotate(-210deg);
+}
+.num8{
+	transform: rotate(240deg);
+}
+.num8 div{
+	transform: rotate(-240deg);
+}
+.num9{
+	transform: rotate(270deg);
+}
+.num9 div{
+	transform: rotate(-270deg);
+}
+.num10{
+	transform: rotate(300deg);
+}
+.num10 div{
+	transform: rotate(-300deg);
+}
+.num11{
+	transform: rotate(330deg);
+}
+.num11 div{
+	transform: rotate(-330deg);
+}
+.num12{
+	transform: rotate(360deg);
+}
+.num12 div{
+	transform: rotate(-360deg);
+}
+.pendulum1 {
+	width: 10px;
+    height: 28%;
+    background-color: black;
+    transform-origin: 50% 80%;
+    position: absolute;
+
+    left: 49.7%;
+}
+.pendulum2 {
+	width: 6px;
+    height: 23%;
+    background-color: black;
+    transform-origin: 50% 80%;
+    position: absolute;
+    left: 52%;
+}
+.pendulum3 {
+	width: 6px;
+    height: 23%;
+    background-color: black;
+    transform-origin: 50% 80%;
+    position: absolute;
+    left: 47.7%;
+}
+.pendulum4 {
+	width: 6px;
+    height: 18%;
+    background-color: black;
+    transform-origin: 50% 80%;
+    position: absolute;
+    left: 45.5%;
+}
+.pendulum5 {
+	width: 6px;
+    height: 18%;
+    background-color: black;
+    transform-origin: 50% 80%;
+    position: absolute;
+    left: 54%;
+}
+.pendulum6 {
+	width: 6px;
+    height: 19%;
+    background-color: black;
+    transform-origin: 50% 80%;
+    position: absolute;
+        left: 43.5%;
+    margin-top: -16px
+}
+.pendulum7 {
+	width: 6px;
+    height: 19%;
+    background-color: black;
+    transform-origin: 50% 80%;
+    position: absolute;
+    left: 56%;
+    margin-top: -12px
+}
+.pendulamLogo
+{
+	  position: relative;
+    bottom: -11.4em;
+    width: 50px;
+    height: 54px;
+    border-radius: 50%;
+    border: 6px solid #000;
+    right: 26px;
+}
+
+.pendulumring2 ,.pendulumring3 {
+    position: relative;
+    bottom: -8.4em;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    right: 10px;
+    background-color: #ff623b;
+}
+
+.pendulumring4 {
+  position: relative;
+  bottom: -7.4em;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  right: 12px;
+  background-color: #ff623b;
+}
+.pendulumring5{
+  position: relative;
+  bottom: -7.4em;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  right: 9px;
+  background-color: #ff623b;
+}
