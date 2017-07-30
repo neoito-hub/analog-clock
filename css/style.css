@@ -3,21 +3,26 @@
 :root{
 	--size:270px;
 }
+body {
+  background-image: url("../image/wallpaper.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 #body
 {
     display: flex;
     justify-content: center;
     margin-top: 3.5em;
 }
-#clock
-{
+#clock {
 	width:var(--size);
 	height:var(--size);
 	border:10px solid #464545;
 	border-radius: 50%;
 	position: relative;
+  background:white;
 }
-#sec-hand{
+#sec-hand {
 	width: 1px;
 	height: 50%;
 	background-color: blue;
@@ -25,8 +30,9 @@
 	position: absolute;
 	top:10%;
 	left: 50%;
+  z-index:4;
 }
-#min-hand{
+#min-hand {
 	width: 	3px;
 	height: 40%;
 	background-color: black;
@@ -34,10 +40,9 @@
 	position: absolute;
 	top:18%;
 	left: 50%;
-	
-
+	z-index:4;
 }
-#hr-hand{
+#hr-hand {
 	width: 5px;
 	height: 25%;
 	background-color: #000;
@@ -46,29 +51,29 @@
 	top:30%;
 	left: 50%;
 	margin-left: -2px;
+  z-index:4;
 }
 .circle {
-    width: 7px;
-    height: 7px;
-    border-radius: 100%;
-    position: absolute;
-    top:29%;
-    left: 28%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-  }
-  h3 {
-    letter-spacing: 1px;
-    font-variant: small-caps;
-    position: absolute;
-    left: 50%;
-    top: 15%;
-    transform: translateX(-50%);
-    font-family: sans-serif;
-    color: black;
-    font-weight:100;
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  position: absolute;
+  top:29%;
+  left: 28%;
+  transform: translate(-50%, -50%);
 }
-  #time {
+h3 {
+  letter-spacing: 1px;
+  font-variant: small-caps;
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translateX(-50%);
+  font-family: sans-serif;
+  color: black;
+  font-weight:100;
+}
+#time {
   font-size: 21px;
   width: 32px;
   height: 9px;
@@ -82,18 +87,18 @@
   font-family: monospace;
 }
 .num{
-	 height: 100%;
-	 position: absolute;
-	 left: calc(50% - 0.5em);
+	height: 100%;
+	position: absolute;
+	left: calc(50% - 0.5em);
 }
 .num div{
 	width: 1em;
-    line-height: 3em;
-    color: crimson;
-    text-align: center;
-    vertical-align: middle;
-    font-weight: 900;
-    font-family: cursive;
+  line-height: 3em;
+  color: crimson;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 900;
+  font-family: cursive;
 }
 .num1{
 	transform: rotate(30deg);
@@ -169,84 +174,80 @@
 }
 .pendulum1 {
 	width: 10px;
-    height: 28%;
-    background-color: black;
-    transform-origin: 50% 80%;
-    position: absolute;
-
-    left: 49.7%;
+  height: 28%;
+  background-color: black;
+  transform-origin: 50% 80%;
+  position: absolute;
+  left: 49.7%;
 }
 .pendulum2 {
 	width: 6px;
-    height: 23%;
-    background-color: black;
-    transform-origin: 50% 80%;
-    position: absolute;
-    left: 52%;
+  height: 23%;
+  background-color: black;
+  transform-origin: 50% 80%;
+  position: absolute;
+  left: 52%;
 }
 .pendulum3 {
 	width: 6px;
-    height: 23%;
-    background-color: black;
-    transform-origin: 50% 80%;
-    position: absolute;
-    left: 47.7%;
+  height: 23%;
+  background-color: black;
+  transform-origin: 50% 80%;
+  position: absolute;
+  left: 47.7%;
 }
 .pendulum4 {
 	width: 6px;
-    height: 18%;
-    background-color: black;
-    transform-origin: 50% 80%;
-    position: absolute;
-    left: 45.5%;
+  height: 18%;
+  background-color: black;
+  transform-origin: 50% 80%;
+  position: absolute;
+  left: 45.5%;
 }
 .pendulum5 {
 	width: 6px;
-    height: 18%;
-    background-color: black;
-    transform-origin: 50% 80%;
-    position: absolute;
-    left: 54%;
+  height: 18%;
+  background-color: black;
+  transform-origin: 50% 80%;
+  position: absolute;
+  left: 54%;
 }
 .pendulum6 {
 	width: 6px;
-    height: 19%;
-    background-color: black;
-    transform-origin: 50% 80%;
-    position: absolute;
-        left: 43.5%;
-    margin-top: -16px
+  height: 19%;
+  background-color: black;
+  transform-origin: 50% 80%;
+  position: absolute;
+  left: 43.5%;
+  margin-top: -16px
 }
 .pendulum7 {
 	width: 6px;
-    height: 19%;
-    background-color: black;
-    transform-origin: 50% 80%;
-    position: absolute;
-    left: 56%;
-    margin-top: -12px
+  height: 19%;
+  background-color: black;
+  transform-origin: 50% 80%;
+  position: absolute;
+  left: 56%;
+  margin-top: -12px;
 }
-.pendulamLogo
-{
-	  position: relative;
-    bottom: -11.4em;
-    width: 50px;
-    height: 54px;
-    border-radius: 50%;
-    border: 6px solid #000;
-    right: 26px;
+.pendulamLogo {
+  position: relative;
+  bottom: -11.4em;
+  width: 50px;
+  height: 54px;
+  border-radius: 50%;
+  border: 6px solid #000;
+  right: 26px;
 }
-
 .pendulumring2 ,.pendulumring3 {
-    position: relative;
-    bottom: -8.4em;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    right: 10px;
-    background-color: #ff623b;
+  position: relative;
+  bottom: -8.4em;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  right: 10px;
+  background-color: #ff623b;
 }
-
 .pendulumring4 {
   position: relative;
   bottom: -7.4em;
