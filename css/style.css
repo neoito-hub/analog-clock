@@ -226,3 +226,31 @@ h3 {
 .pendulumring5{
   right: 9px;
 }
+
+@-webkit-keyframes oscillation
+{
+  from
+  {
+    -webkit-transform:rotate(-3deg);
+  }
+  to{
+    -webkit-transform:rotate(3deg);
+  }
+}
+ 
+@-moz-keyframes oscillation
+{
+  from{
+    -moz-transform:rotate(-9deg);
+  }
+  to{
+    -moz-transform:rotate(9deg);
+  }
+}
+ 
+ .oscillate{  
+  -webkit-transform-origin:50% -40px;  
+  -moz-transform-origin:50% -40px;   
+  -webkit-animation: oscillation 1s ease-in-out infinite alternate;
+  -moz-animation: oscillation 1s ease-in-out infinite alternate;
+}
